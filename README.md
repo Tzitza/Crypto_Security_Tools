@@ -4,8 +4,8 @@ A Python toolkit demonstrating file integrity verification and secure user authe
 
 ## Projects
 
-### 1. File Integrity Checker
-**File:** `ΑΣΚΗΣΗ1_ΤΖΙΤΖΑ_2589.py`
+### 1. File_integrity_checker
+**File:** `File_integrity_checker.py`
 
 A Python tool for verifying file integrity using multiple cryptographic hash algorithms. Detects file tampering by comparing original and modified hash values.
 
@@ -17,7 +17,7 @@ A Python tool for verifying file integrity using multiple cryptographic hash alg
 
 #### Usage
 ```bash
-python ΑΣΚΗΣΗ1_ΤΖΙΤΖΑ_2589.py
+python File_integrity_checker.py
 ```
 
 The program will:
@@ -29,8 +29,8 @@ The program will:
 
 ---
 
-### 2. Secure Authentication System
-**File:** `ΕΡΓΑΣΙΑ2_ΤΖΙΤΖΑ_2589.py`
+### 2. Secure_authentication_system
+**File:** `Secure_authentication_system.py`
 
 A comprehensive user authentication system implementing secure password storage with salted hashing, AES encryption, and elliptic curve digital signatures.
 
@@ -49,7 +49,7 @@ A comprehensive user authentication system implementing secure password storage 
 
 #### Usage
 ```bash
-python ΕΡΓΑΣΙΑ2_ΤΖΙΤΖΑ_2589.py
+python Secure_authentication_system.py
 ```
 
 The program provides a menu with options to:
@@ -73,26 +73,26 @@ pip install cryptography
 
 ```
 cryptographic-security-toolkit/
-├── ΑΣΚΗΣΗ1_ΤΖΙΤΖΑ_2589.py          # File integrity checker
-├── ΕΡΓΑΣΙΑ2_ΤΖΙΤΖΑ_2589.py          # Secure authentication system
-├── README.md                        # This file
-└── generated_files/                 # Created during execution
-    ├── original_hashes.txt          # Original file hashes
-    ├── modified_hashes.txt          # Modified file hashes
-    ├── [username].enc               # Encrypted user data
-    ├── [username]_key.key           # AES encryption key
-    ├── [username]_signature.sig     # Digital signature
-    └── [username]_private_key.pem   # ECDSA private key
+├── File_integrity_checker.py           # File integrity checker
+├── Secure_authentication_system.py     # Secure authentication system
+├── README.md                           # This file
+└── generated_files/                    # Created during execution
+    ├── original_hashes.txt             # Original file hashes
+    ├── modified_hashes.txt             # Modified file hashes
+    ├── [username].enc                  # Encrypted user data
+    ├── [username]_key.key              # AES encryption key
+    ├── [username]_signature.sig        # Digital signature
+    └── [username]_private_key.pem      # ECDSA private key
 ```
 
 ## Security Notes
 
-### File Integrity Checker
+### File_integrity_checker
 - **Hash Algorithms:** Uses multiple algorithms for comprehensive verification
 - **Tamper Detection:** Any modification to the file will change all hash values
 - **Collision Resistance:** SHA-256 and SHA-3 provide strong collision resistance
 
-### Authentication System
+### Secure_authentication_system
 - **Password Security:** Passwords are salted and hashed before storage
 - **Encryption:** All sensitive data is encrypted with AES-256
 - **Digital Signatures:** ECDSA ensures data integrity and authenticity
