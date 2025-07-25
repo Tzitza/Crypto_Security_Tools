@@ -107,34 +107,3 @@ def authenticate_user(username, password):
     else:
         print("Λάθος όνομα χρήστη ή κωδικός πρόσβασης.")
 
-# Κύρια συνάρτηση για τη δημιουργία νέου χρήστη
-def create_user():
-    username = input("Εισάγετε όνομα χρήστη: ")
-    password = input("Εισάγετε κωδικό πρόσβασης: ")
-    key = save_password(username, password)
-    sign_password_file(username, key)
-    print("Ο νέος χρήστης δημιουργήθηκε επιτυχώς.")
-
-# Κύρια λούπα προγράμματος
-def main():
-    while True:
-        print("\nΚαλώς ήρθατε!\nΕπιλογές:")
-        print("1. Σύνδεση")
-        print("2. Δημιουργία νέου χρήστη")
-        print("3. Έξοδος")
-        choice = input("Επιλέξτε: ")
-
-        if choice == '1':
-            username = input("Εισάγετε όνομα χρήστη: ")
-            password = input("Εισάγετε κωδικό πρόσβασης: ")
-            authenticate_user(username, password)
-        elif choice == '2':
-            create_user()
-        elif choice == '3':
-            print("Αντίο!")
-            break
-        else:
-            print("Μη έγκυρη επιλογή. Παρακαλώ προσπαθήστε ξανά.")
-
-if __name__ == "__main__":
-    main()
