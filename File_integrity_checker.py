@@ -57,3 +57,25 @@ def save_hashes_to_file(file_path, hashes):
         for algo, value in hashes.items():
             file.write(f"{algo}: {value}\n")
 
+
+if __name__ == "__main__":
+    # Ask for the file path
+    file_path = input("Enter path to the file: ")
+
+    # Calculate hashes
+    file_hashes = calculate_hashes(file_path)
+
+    # Save original hashes to a separate file
+    original_hashes_file = "original_hashes.txt"
+    save_hashes_to_file(original_hashes_file, file_hashes)
+    print(f"Original hashes saved to {original_hashes_file}")
+
+    # Check integrity
+    check_integrity(file_path)
+
+    # Ask if user wants to save modified hashes
+    save_modified_hashes = input("Do you want to save modified hashes to a file? (y/n): ").strip().lower()
+    if save_modified_hashes == "y":
+        modified_hashes_file = "modified_hashes.txt"
+        save_hashes_to_file(modified_hashes_file, file_hashes)
+        print(f"Modified hashes saved to {modified_hashes_file}")
