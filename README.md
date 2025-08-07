@@ -115,10 +115,4 @@ This toolkit is designed for educational purposes to demonstrate:
 - Adding comprehensive error handling
 - Following security best practices for production environments
 
-## License
 
-This project is intended for educational use. Please ensure compliance with your institution's academic policies when using this code.
-
----
-
-*Note: Interface messages are in Greek (Ελληνικά) as this appears to be coursework for a Greek institution.*
