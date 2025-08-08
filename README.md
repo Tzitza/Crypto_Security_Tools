@@ -121,3 +121,4 @@ This project is intended for educational use. Please ensure compliance with your
 
 ---
 
+*Note: Interface messages are in Greek (Ελληνικά) as this appears to be coursework for a Greek institution.*
